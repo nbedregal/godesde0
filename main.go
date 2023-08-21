@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/nbedregal/godesde0/ejercicios"
+	"github.com/nbedregal/godesde0/files"
 )
 
 func main() {
-	ejercicios.TablaNumerica()
-
+	//files.SumaTabla()
+	files.LeoArchivo()
 }

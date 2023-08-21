@@ -7,23 +7,28 @@ import (
 	"strconv"
 )
 
-var numero int
-var err error
+func TablaNumerica() string {
 
-func TablaNumerica() {
+	var numero int
+	var err error
+	var texto string
 	scanner := bufio.NewScanner(os.Stdin)
 
 	fmt.Println("Ingrese número: ")
 
-	if scanner.Scan() {
-		numero, err = strconv.Atoi(scanner.Text())
-		if err != nil {
-			TablaNumerica()
+	for {
+		if scanner.Scan() {
+			numero, err = strconv.Atoi(scanner.Text())
+			if err != nil {
+				continue
+			} else {
+				break
+			}
 		}
 	}
 
 	for i := 1; i <= 10; i++ {
-		fmt.Println(numero, "*", i, " : ", i*numero)
+		texto += fmt.Sprintf("%d x %d = %d\n", numero, i, numero*i)
 	}
-
+	return texto
 }
