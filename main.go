@@ -1,9 +1,14 @@
 package main
 
 import (
-	"github.com/nbedregal/godesde0/users"
+	e "github.com/nbedregal/godesde0/ejer_interfaces"
+	m "github.com/nbedregal/godesde0/modelos"
 )
 
 func main() {
-	users.AltaUsuario()
+	Pedro := new(m.Hombre)
+	e.HumanosRespirando(Pedro)
+
+	Maria := new(m.Mujer)
+	e.HumanosRespirando(Maria)
 }
