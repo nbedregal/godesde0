@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/nbedregal/godesde0/mapas"
+	"github.com/nbedregal/godesde0/users"
 )
 
 func main() {
-	mapas.MostrarMapas()
+	users.AltaUsuario()
 }
