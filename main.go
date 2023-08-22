@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/nbedregal/godesde0/files"
+	"github.com/nbedregal/godesde0/mapas"
 )
 
 func main() {
-	//files.SumaTabla()
-	files.LeoArchivo()
+	mapas.MostrarMapas()
 }
