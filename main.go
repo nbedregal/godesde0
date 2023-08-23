@@ -1,7 +1,7 @@
 package main
 
 import (
-	d "github.com/nbedregal/godesde0/webserver"
+	d "github.com/nbedregal/godesde0/middleware"
 )
 
 func main() {
@@ -12,6 +12,6 @@ func main() {
 	}()
 	fmt.Println("Estoy acá")*/
 
-	d.MiWebServer()
+	d.MiMiddleware()
 
 }
